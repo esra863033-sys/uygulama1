@@ -54,11 +54,11 @@ def login():
 
         if pwd and pwd == ADMIN_PASSWORD:
 
-        session["admin"] = True
+            session["admin"] = True
 
-        flash("Başarıyla giriş yapıldı.", "success")
+            flash("Başarıyla giriş yapıldı.", "success")
 
-        return redirect(url_for("index"))
+            return redirect(url_for("index"))
 
     else:
 
